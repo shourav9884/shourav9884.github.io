@@ -4,10 +4,10 @@
 	<title>Md. Ashfak S.</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 	<style type="text/css">
 		body {
-			font-family: 'Roboto';
+			font-family: 'Montserrat';
 			background-color: #F2F2F2;
 		}
 		.bg-white {
@@ -24,9 +24,7 @@
 		.profession_link_container>a{
 			color: #000 !important;
 		}
-		.air-icon-top-rated:before {
-		    content: "\e9ef";
-		}
+		
 	</style>
 </head>
 <body>
@@ -243,650 +241,31 @@
 				<div class="card-body">
 					<h5 class="card-title">Work history and feedback</h5>
 					<div class="card-text">
-						
-						<div class="border-bottom" style="margin-top: 20px;">
-							<div class="row">
-								<div class="col-md-6">
-									<p>
-										<span  class="font-weight-bold"><a class="text-reset" href="https://www.upwork.com/o/profiles/users/~017094abb7e4fca9e1/" target="_blank">I need to upload posts on my WP site</a></span><br>
-										Mar 2019 - Jun 2019<br>
-										No feedback given
-									</p>
-								</div>
-								<div class="col-md-2"></div>
-								<div class="col-md-4 text-right">
-									<p>
-										<span class="font-weight-bold">$80</span><br>
-										Fixed-price
-									</p>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="border-bottom" style="margin-top: 20px;">
-							<div class="row">
-								<div class="col-md-6">
-									<p>
-										<span  class="font-weight-bold"><a class="text-reset" href="https://www.upwork.com/o/profiles/users/~017094abb7e4fca9e1/" target="_blank">Project director needs highly organised assistant</a></span><br>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										 <span class='font-weight-bold'> 5.0</span>  Mar 2019 - Jun 2019<br>
-										No feedback given
-									</p>
-								</div>
-								<div class="col-md-2"></div>
-								<div class="col-md-4 text-right">
-									<p>
-										<span class="font-weight-bold">$51.34</span><br>
-										$7 / hr.<br>
-										7.33 hours
-									</p>
+						<div class="job-container">
+							<div class="border-bottom" style="margin-top: 20px;" v-for="job in job_list">
+								<div class="row">
+									<div class="col-md-6">
+										<p style="margin-bottom: 5px;">
+											<span  class="font-weight-bold"><a class="text-success" href="https://www.upwork.com/o/profiles/users/~017094abb7e4fca9e1/" target="_blank">{{job.title}}</a></span>
+										</p>
+										<p style="margin-bottom: 5px;">
+											<h6 style="display: inline-block; margin-right: 5px;" v-if="job.score_details" v-html="job.score_details"></h6>  <span class="text-muted">{{job.time_details}}</span>
+										</p>
+										<p>
+											<em v-if="job.comment"> {{job.comment}} </em>
+											<span v-else>No feedback given</span>
+										</p>
+									</div>
+									<div class="col-md-2"></div>
+									<div class="col-md-4 text-right">
+										<p>
+											<span class="font-weight-bold">{{job.total_income}}</span><br>
+											<span v-html="job.income_details"></span>
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
-
-
-						<div class="border-bottom" style="margin-top: 20px;">
-							<div class="row">
-								<div class="col-md-6">
-									<p>
-										<span  class="font-weight-bold"><a class="text-reset" href="https://www.upwork.com/o/profiles/users/~017094abb7e4fca9e1/" target="_blank">Content Writer</a></span><br>
-										Dec 2018 - Mar 2019<br>
-										No feedback given
-									</p>
-								</div>
-								<div class="col-md-2"></div>
-								<div class="col-md-4 text-right">
-									<p>
-										<span class="font-weight-bold">$211</span><br>
-										Fixed-price
-									</p>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="border-bottom" style="margin-top: 20px;">
-							<div class="row">
-								<div class="col-md-6">
-									<p>
-										<span  class="font-weight-bold"><a class="text-reset" href="https://www.upwork.com/o/profiles/users/~017094abb7e4fca9e1/" target="_blank">Fashion Social Media Marketer needed</a></span><br>
-										Sep 2018 - Jan 2019<br>
-										No feedback given
-									</p>
-								</div>
-								<div class="col-md-2"></div>
-								<div class="col-md-4 text-right">
-									<p>
-										<span class="font-weight-bold">$50</span><br>
-										Fixed-price
-									</p>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="border-bottom" style="margin-top: 20px;">
-							<div class="row">
-								<div class="col-md-6">
-									<p>
-										<span  class="font-weight-bold"><a class="text-reset" href="https://www.upwork.com/o/profiles/users/~017094abb7e4fca9e1/" target="_blank">Looking for a VA who can help with misc task.</a></span><br>
-										Nov 2018 - Jan 2019<br>
-										No feedback given
-									</p>
-								</div>
-								<div class="col-md-2"></div>
-								<div class="col-md-4 text-right">
-									<p>
-										<span class="font-weight-bold">$91</span><br>
-										$7 / hr.<br>
-										13 hours
-									</p>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="border-bottom" style="margin-top: 20px;">
-							<div class="row">
-								<div class="col-md-6">
-									<p>
-										<span  class="font-weight-bold"><a class="text-reset" href="https://www.upwork.com/o/profiles/users/~017094abb7e4fca9e1/" target="_blank">Digital marketing</a></span><br>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										 <span class='font-weight-bold'> 5.0</span>  Nov 2017 - Aug 2018<br>
-										No feedback given
-									</p>
-								</div>
-								<div class="col-md-2"></div>
-								<div class="col-md-4 text-right">
-									<p>
-										<span class="font-weight-bold">$182.74</span><br>
-										$6.5 / hr.<br>
-										23 hours
-									</p>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="border-bottom" style="margin-top: 20px;">
-							<div class="row">
-								<div class="col-md-6">
-									<p>
-										<span  class="font-weight-bold"><a class="text-reset" href="https://www.upwork.com/o/profiles/users/~017094abb7e4fca9e1/" target="_blank">Online Research: Locating & Contacting Artist for Projects</a></span><br>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										 <span class='font-weight-bold'> 5.0</span>  Aug 2017 - Jun 2018<br>
-										<br><em>Excellent work.  I hired multiple people for this task and Md. Ashfak Sayed's skills stood well above the rest.  I will certainly reach out to them again, the next time I have the need.</em>
-									</p>
-								</div>
-								<div class="col-md-2"></div>
-								<div class="col-md-4 text-right">
-									<p>
-										<span class="font-weight-bold">$201.25</span><br>
-										$7.5 / hr.<br>
-										27 hours
-									</p>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="border-bottom" style="margin-top: 20px;">
-							<div class="row">
-								<div class="col-md-6">
-									<p>
-										<span  class="font-weight-bold"><a class="text-reset" href="https://www.upwork.com/o/profiles/users/~017094abb7e4fca9e1/" target="_blank">Admin help</a></span><br>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='far fa-star'></i>
-										<i class='far fa-star'></i>
-										<i class='far fa-star'></i>
-										 <span class='font-weight-bold'> 2.85</span>  Apr 2017 - May 2017<br>
-										No feedback given
-									</p>
-								</div>
-								<div class="col-md-2"></div>
-								<div class="col-md-4 text-right">
-									<p>
-										<span class="font-weight-bold">$72</span><br>
-										$6 / hr.<br>
-										12 hours
-									</p>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="border-bottom" style="margin-top: 20px;">
-							<div class="row">
-								<div class="col-md-6">
-									<p>
-										<span  class="font-weight-bold"><a class="text-reset" href="https://www.upwork.com/o/profiles/users/~017094abb7e4fca9e1/" target="_blank">Will pay $5 USD to anyone who can share my YouTube video in their network (Blog, Facebook Page, Etc)</a></span><br>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										 <span class='font-weight-bold'> 5.0</span>  Mar 2017 - Mar 2017<br>
-										<br><em>Did what he said he would do. Good Job.</em>
-									</p>
-								</div>
-								<div class="col-md-2"></div>
-								<div class="col-md-4 text-right">
-									<p>
-										<span class="font-weight-bold">$6.5</span><br>
-										Fixed-price
-									</p>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="border-bottom" style="margin-top: 20px;">
-							<div class="row">
-								<div class="col-md-6">
-									<p>
-										<span  class="font-weight-bold"><a class="text-reset" href="https://www.upwork.com/o/profiles/users/~017094abb7e4fca9e1/" target="_blank">Looking for setup campaign ads  to promote my account to increase followers on Twitter</a></span><br>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										 <span class='font-weight-bold'> 5.0</span>  Jul 2016 - Nov 2016<br>
-										No feedback given
-									</p>
-								</div>
-								<div class="col-md-2"></div>
-								<div class="col-md-4 text-right">
-									<p>
-										<span class="font-weight-bold">$240</span><br>
-										Fixed-price
-									</p>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="border-bottom" style="margin-top: 20px;">
-							<div class="row">
-								<div class="col-md-6">
-									<p>
-										<span  class="font-weight-bold"><a class="text-reset" href="https://www.upwork.com/o/profiles/users/~017094abb7e4fca9e1/" target="_blank">Looking For, Facebook Marketing Experts/Specialists/Executives/Managers!</a></span><br>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										 <span class='font-weight-bold'> 5.0</span>  Jul 2016 - Jul 2016<br>
-										<br><em>Perfect!!!!!</em>
-									</p>
-								</div>
-								<div class="col-md-2"></div>
-								<div class="col-md-4 text-right">
-									<p>
-										<span class="font-weight-bold">$34.38</span><br>
-										$6.25 / hr.<br>
-										5.5 hours
-									</p>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="border-bottom" style="margin-top: 20px;">
-							<div class="row">
-								<div class="col-md-6">
-									<p>
-										<span  class="font-weight-bold"><a class="text-reset" href="https://www.upwork.com/o/profiles/users/~017094abb7e4fca9e1/" target="_blank">Twitter Manager</a></span><br>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='far fa-star'></i>
-										 <span class='font-weight-bold'> 4.4</span>  Nov 2014 - May 2016<br>
-										<br><em>I have been delighted with the work from stbadhon and have been using him for over a year. I ope to continue to work together for a long time into the future.</em>
-									</p>
-								</div>
-								<div class="col-md-2"></div>
-								<div class="col-md-4 text-right">
-									<p>
-										<span class="font-weight-bold">$4265</span><br>
-										Fixed-price
-									</p>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="border-bottom" style="margin-top: 20px;">
-							<div class="row">
-								<div class="col-md-6">
-									<p>
-										<span  class="font-weight-bold"><a class="text-reset" href="https://www.upwork.com/o/profiles/users/~017094abb7e4fca9e1/" target="_blank">Web Researcher needed to gather data from English speaking sites: USA, U.K., Australia, canada</a></span><br>
-										Oct 2015 - Nov 2015<br>
-										No feedback given
-									</p>
-								</div>
-								<div class="col-md-2"></div>
-								<div class="col-md-4 text-right">
-									<p>
-										<span class="font-weight-bold">$10.83</span><br>
-										$5 / hr.<br>
-										2.17 hours
-									</p>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="border-bottom" style="margin-top: 20px;">
-							<div class="row">
-								<div class="col-md-6">
-									<p>
-										<span  class="font-weight-bold"><a class="text-reset" href="https://www.upwork.com/o/profiles/users/~017094abb7e4fca9e1/" target="_blank">VA for LinkedIn Research & Connecting</a></span><br>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										 <span class='font-weight-bold'> 5.0</span>  Jul 2015 - Jul 2015<br>
-										<br><em>Ashfak is very responsive and a great VA!</em>
-									</p>
-								</div>
-								<div class="col-md-2"></div>
-								<div class="col-md-4 text-right">
-									<p>
-										<span class="font-weight-bold">$8.25</span><br>
-										$4.5 / hr.<br>
-										1.83 hours
-									</p>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="border-bottom" style="margin-top: 20px;">
-							<div class="row">
-								<div class="col-md-6">
-									<p>
-										<span  class="font-weight-bold"><a class="text-reset" href="https://www.upwork.com/o/profiles/users/~017094abb7e4fca9e1/" target="_blank">Virtual Assistant required to grow online business</a></span><br>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										 <span class='font-weight-bold'> 5.0</span>  Mar 2015 - May 2015<br>
-										<br><em>Great work.</em>
-									</p>
-								</div>
-								<div class="col-md-2"></div>
-								<div class="col-md-4 text-right">
-									<p>
-										<span class="font-weight-bold">$310</span><br>
-										$5.56 / hr.<br>
-										0 hours
-									</p>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="border-bottom" style="margin-top: 20px;">
-							<div class="row">
-								<div class="col-md-6">
-									<p>
-										<span  class="font-weight-bold"><a class="text-reset" href="https://www.upwork.com/o/profiles/users/~017094abb7e4fca9e1/" target="_blank">Find Photos for website</a></span><br>
-										Mar 2015 - Mar 2015<br>
-										No feedback given
-									</p>
-								</div>
-								<div class="col-md-2"></div>
-								<div class="col-md-4 text-right">
-									<p>
-										<span class="font-weight-bold">$2.5</span><br>
-										$5 / hr.<br>
-										0.5 hours
-									</p>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="border-bottom" style="margin-top: 20px;">
-							<div class="row">
-								<div class="col-md-6">
-									<p>
-										<span  class="font-weight-bold"><a class="text-reset" href="https://www.upwork.com/o/profiles/users/~017094abb7e4fca9e1/" target="_blank">Market Research for Farming/Agriculture Apps</a></span><br>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='far fa-star'></i>
-										 <span class='font-weight-bold'> 4.5</span>  Sep 2014 - Feb 2015<br>
-										<br><em>Helpful, prompt and on time. Thanks Ashfak!</em>
-									</p>
-								</div>
-								<div class="col-md-2"></div>
-								<div class="col-md-4 text-right">
-									<p>
-										<span class="font-weight-bold">$20</span><br>
-										$4 / hr.<br>
-										5 hours
-									</p>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="border-bottom" style="margin-top: 20px;">
-							<div class="row">
-								<div class="col-md-6">
-									<p>
-										<span  class="font-weight-bold"><a class="text-reset" href="https://www.upwork.com/o/profiles/users/~017094abb7e4fca9e1/" target="_blank">Looking for a Seriously Awesome Virtual Assitant</a></span><br>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='far fa-star'></i>
-										 <span class='font-weight-bold'> 4.6</span>  Oct 2014 - Oct 2014<br>
-										<br><em>I gave this freelancer a test task which he completed promptly. But despite the exact instructions, the task was not done at 100% and that's why I can't continue working with him.
-										I'd point out though that he is great in communication and client service - he also has good ideas regarding online marketing.</em>
-									</p>
-								</div>
-								<div class="col-md-2"></div>
-								<div class="col-md-4 text-right">
-									<p>
-										<span class="font-weight-bold">$10.54</span><br>
-										$3.33 / hr.<br>
-									3.17 hours
-									</p>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="border-bottom" style="margin-top: 20px;">
-							<div class="row">
-								<div class="col-md-6">
-									<p>
-										<span  class="font-weight-bold"><a class="text-reset" href="https://www.upwork.com/o/profiles/users/~017094abb7e4fca9e1/" target="_blank">Affiliate Marketing</a></span><br>
-										Apr 2014 - Jun 2014<br>
-										No feedback given
-									</p>
-								</div>
-								<div class="col-md-2"></div>
-								<div class="col-md-4 text-right">
-									<p>
-										<span class="font-weight-bold">$14.66</span><br>
-										$4 / hr.<br>
-										3.67 hours
-									</p>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="border-bottom" style="margin-top: 20px;">
-							<div class="row">
-								<div class="col-md-6">
-									<p>
-										<span  class="font-weight-bold"><a class="text-reset" href="https://www.upwork.com/o/profiles/users/~017094abb7e4fca9e1/" target="_blank">collect funny pictures about laser pointers | max 2usd/hour</a></span><br>
-										Apr 2014 - Jun 2014<br>
-										No feedback given
-									</p>
-								</div>
-								<div class="col-md-2"></div>
-								<div class="col-md-4 text-right">
-									<p>
-										<span class="font-weight-bold">$5.18</span><br>
-										$2.22 / hr.<br>
-										2.33 hours
-									</p>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="border-bottom" style="margin-top: 20px;">
-							<div class="row">
-								<div class="col-md-6">
-									<p>
-										<span  class="font-weight-bold"><a class="text-reset" href="https://www.upwork.com/o/profiles/users/~017094abb7e4fca9e1/" target="_blank">virtual secretary</a></span><br>
-										Mar 2014 - Jun 2014<br>
-										No feedback given
-									</p>
-								</div>
-								<div class="col-md-2"></div>
-								<div class="col-md-4 text-right">
-									<p>
-										<span class="font-weight-bold">$3.88</span><br>
-										$3.33 / hr.<br>
-										1.17 hours
-									</p>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="border-bottom" style="margin-top: 20px;">
-							<div class="row">
-								<div class="col-md-6">
-									<p>
-										<span  class="font-weight-bold"><a class="text-reset" href="https://www.upwork.com/o/profiles/users/~017094abb7e4fca9e1/" target="_blank">Need Promo Code posted in Facebook event groups every night multiple cities.</a></span><br>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										 <span class='font-weight-bold'> 5.0</span>  Mar 2014 - May 2014<br>
-										<br><em>Great job, would definitely hire again!</em>
-									</p>
-								</div>
-								<div class="col-md-2"></div>
-								<div class="col-md-4 text-right">
-									<p>
-										<span class="font-weight-bold">$17.57</span><br>
-										$1.11 / hr.<br>
-										16 hours
-									</p>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="border-bottom" style="margin-top: 20px;">
-							<div class="row">
-								<div class="col-md-6">
-									<p>
-										<span  class="font-weight-bold"><a class="text-reset" href="https://www.upwork.com/o/profiles/users/~017094abb7e4fca9e1/" target="_blank">Upload Youtube Videos Today!</a></span><br>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<span class='font-weight-bold'> 5.0</span>  Mar 2014 - Mar 2014<br>
-										No feedback given
-									</p>
-								</div>
-								<div class="col-md-2"></div>
-								<div class="col-md-4 text-right">
-									<p>
-										<span class="font-weight-bold">$1</span><br>
-										Fixed-price
-									</p>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="border-bottom" style="margin-top: 20px;">
-							<div class="row">
-								<div class="col-md-6">
-									<p>
-										<span  class="font-weight-bold"><a class="text-reset" href="https://www.upwork.com/o/profiles/users/~017094abb7e4fca9e1/" target="_blank">Social Web application support</a></span><br>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='far fa-star'></i>
-										 <span class='font-weight-bold'> 4.65</span>  Sep 2013 - Oct 2013<br>
-										<br><em>Delivered well and within deadlines.</em>
-									</p>
-								</div>
-								<div class="col-md-2"></div>
-								<div class="col-md-4 text-right">
-									<p>
-										<span class="font-weight-bold">$4.44</span><br>
-										Fixed-price
-									</p>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="border-bottom" style="margin-top: 20px;">
-							<div class="row">
-								<div class="col-md-6">
-									<p>
-										<span  class="font-weight-bold"><a class="text-reset" href="https://www.upwork.com/o/profiles/users/~017094abb7e4fca9e1/" target="_blank">List of Australian Recruiters on Twitter</a></span><br>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										 <span class='font-weight-bold'> 5.0</span>  Aug 2013 - Aug 2013<br>
-										No feedback given
-									</p>
-								</div>
-								<div class="col-md-2"></div>
-								<div class="col-md-4 text-right">
-									<p>
-										<span class="font-weight-bold">$16.67</span><br>
-										Fixed-price
-									</p>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="border-bottom" style="margin-top: 20px;">
-							<div class="row">
-								<div class="col-md-6">
-									<p>
-										<span  class="font-weight-bold"><a class="text-reset" href="https://www.upwork.com/o/profiles/users/~017094abb7e4fca9e1/" target="_blank">Backup Virtual Assistant</a></span><br>
-										Jun 2013 - Jul 2013<br>
-										No feedback given
-									</p>
-								</div>
-								<div class="col-md-2"></div>
-								<div class="col-md-4 text-right">
-									<p>
-										<span class="font-weight-bold">$199.57</span><br>
-										$1.67 / hr.<br>
-										125 hours
-									</p>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="border-bottom" style="margin-top: 20px;">
-							<div class="row">
-								<div class="col-md-6">
-									<p>
-										<span  class="font-weight-bold"><a class="text-reset" href="https://www.upwork.com/o/profiles/users/~017094abb7e4fca9e1/" target="_blank">App log-in</a></span><br>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										<i class='fa fa-star text-success'></i>
-										 <span class='font-weight-bold'> 5.0</span>  Jun 2013 - Jun 2013<br>
-										<br><em>Badhon completed the work quickly, accurately and successfully.  I would like to work with Badhon again!</em>
-									</p>
-								</div>
-								<div class="col-md-2"></div>
-								<div class="col-md-4 text-right">
-									<p>
-										<span class="font-weight-bold">$1</span><br>
-										Fixed-price
-									</p>
-								</div>
-							</div>
-						</div>
-
-
 					</div>
 				</div>
 				
@@ -911,6 +290,8 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+<script type="text/javascript" src="data.json"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script type="text/javascript">
 	$(document).ready(function () {
 		showProfile(1);
@@ -942,6 +323,13 @@
 			$("#button_"+id).removeClass('btn-success');
 		}
 	});
+	var job_list = [{"name": "nati"}];
+	var app = new Vue({
+	  el: '.job-container',
+	  data: {
+	    job_list: data
+	  }
+	})
 </script>
 </body>
 </html>
